@@ -1,0 +1,31 @@
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+.img-fluid {
+    margin-bottom: 10px;
+}
+
+.header-h1 {
+    margin: 40px 30px 50px 0px;
+}
+
+.project-section h3 {
+    margin: 10px 0px 30px 0px;
+    border-bottom: 2px solid white;
+    padding: 2px 0px;
+}
+
+.project-section p, .project-section a {
+    margin-bottom: 30px;
+}
