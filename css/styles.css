@@ -11,8 +11,12 @@ body {
     background-color: black !important;
 }
 
-.row {
-    margin-bottom: 50px;
+.project-header h2 {
+    padding-left: 0px !important;
+}
+
+.project-header {
+    margin: 50px 0px;
 }
 
 .img-fluid {
@@ -40,12 +44,19 @@ body {
     color: black;
 }
 
-.project-section h3, .project-header h3 {
-    margin: 10px 0px 30px 0px;
+.project-section h3, .project-header h3, .resume-section h3, .resume-header h3 {
     padding: 2px 0px;
 }
 
-.project-section h3 {
+.project-section h3, .project-header h3 {
+    margin: 10px 0px 30px 0px;
+}
+
+.resume-section h3, .resume-header h3 {
+    margin: 10px 0px 10px 0px;
+}
+
+.project-section h3, .resume-section h3 {
     border-bottom: 2px solid #b5b5b5;
 }
 
@@ -122,14 +133,11 @@ body {
     background-color: #9b0000;
 }
 
-.project-header h2{
-    /*border-bottom: 2px solid white;*/
-}
 
 .project-section p, .project-section a{
     margin-bottom: 4px;
 }
 
-.project-section {
+.project-section, .resume-section {
     color: rgba(255,255,255,.55);
 }
