@@ -1,173 +1,487 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>George Olson</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://use.fontawesome.com/8d421130f8.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles.css" />
-      </head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>George Olson</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/8d421130f8.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <h1 class="header-h1"><i class="fa fa-terminal"></i>George</h1>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#projects">Projects and Experience</a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <h1 class="header-h1"><i class="fa fa-terminal"></i>George</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul
+                  class="dropdown-menu bg-dark"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><span class="dropdown-label">Professional</span></li>
+                  <li>
+                    <a class="dropdown-item" href="#psu">Student Media Tech Team</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                  <li class="hidden">
+                    <a class="dropdown-item" href="#skidata">SKIDATA</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                  <li>
+                    <a class="dropdown-item" href="#fringe">Fringe Digital Marketing</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#misc">Misc. Projects</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><span class="dropdown-label">Educational</span></li>
+                  <li>
+                    <a class="dropdown-item" href="#school">Epicodus</a>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </nav>
-        
-        <a name="projects"></a>
-        <div class="container">
-            <div class="row project-section">
-                    <div class="col-12">
-                        <h2>Projects and Experience:~</h2>
-                    </div>
-            </div>
-            <div class="row project-section">
-                    <div class="col-12">
-                        <h3>Portland State University Student Media (2019-present)</h3>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>KPSU RadioCo Player</h4>
-                        <img class="img-fluid" src="img/kpsu-player.png" alt="Screenshot of the KPSU radio player using RadioCo"/>
-                        <a type="button" data-bs-toggle="collapse" data-bs-target="#KPSU" aria-expanded="false" aria-controls="KPSU">Read More</a>
-                        <div class="collapse" id="KPSU">
-                            <p>A custom radio player for the new website redesign for Portland State University’s radio station. I used RadioCo’s DIY Radio builder kit as a starting point and created a WordPress template that implements RadioCo streaming functionality with a clean layout that matches the site’s new identity. The player opens in a separate browser window so music can play in the background without relying on an AJAX Wordpress template.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>SALPies</h4>
-                        <img class="img-fluid" src="img/salpies.png" alt="Screenshot of the SALPies website design as seen when it was live"/>
-                        <a type="button" data-bs-toggle="collapse" data-bs-target="#SALP" aria-expanded="false" aria-controls="SALP">Read More</a>
-                        <div class="collapse" id="SALP">
-                            <p>A website built for an awards ceremony for SALP leaders at Portland State University, hosted digitally during the COVID-19 pandemic. This website used HTML & CSS and custom JavaScript to create a unique digital experience similar to what would normally be hosted in-person at the university. The design was created by our designer and I built out the website.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Party In The Park 2020</h4>
-                        <img class="img-fluid" src="img/PIP_screen.jpg" alt="Screenshot of Party In The Park 2020's website design as seen when it was live"/>
-                        <a type="button" data-bs-toggle="collapse" data-bs-target="#PIP" aria-expanded="false" aria-controls="PIP">Read More</a>
-                        <div class="collapse" id="PIP">
-                            <p>A website built to serve as a virtual fair during the COVID-19 pandemic in 2020. This website contained a list of events similar to an in-person Party In The Park fair. This website was built using node and PHP with .php web pages generated using a custom code generation tool to pull organization data from a spreadsheet and create web pages for each organization. Our designer was responsible for designing the assets and I helped my fellow developer build out the templates and created the generator.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 hidden">
-                        <h4>Sub Basement Studios</h4>
-                        <p>A website redesign & rebranding for Portland State University’s student-run production house. Our designer created several mockups for page layouts and created all of the assets, and I built out the custom WordPress templates. </p>
-                    </div>
-            </div>
-            <div class="row project-section hidden">
-                    <div class="col-12">
-                        <h3>Fringe Digital Marketing (2014-2016)</h3>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>WRK Engineers</h4>
-                        <p>A robust WordPress website built for an engineering firm based in Vancouver, Washington. The website contains custom post types for projects and other items. Contains custom navigation functionality within project categories, as well. My supervisor managed the design of assets and mockups, and I built out the WordPress theme from scratch and handled the functionality.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Somarakis</h4>
-                        <p>A WordPress website built for a company that manufactures liquid ring vacuum pumps in Kalama, Washington. This website was designed by my supervisor and I built out the template and other functionality.</p>
-                    </div>
-            </div>
-            <div class="row project-section hidden">
-                    <div class="col-12">
-                        <h3>SKIDATA Loyalty.Logic (2017-2019)</h3>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Loyalty Control Panel</h4>
-                        <p>A new Angular-based web consoles for loyalty program management, including management of localization features for multiple languages and ensuring responsive design. </p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Loyalty Scheduler</h4>
-                        <p>A simple program that uses CRON triggers to run various jobs on any given interval. Examples include weekly & monthly SQL exports for clients, monthly information deletion.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>GDPR User Obfuscation</h4>
-                        <p>a new featured extended into the loyalty program that removes & obfuscates user data when requested by users, as required by EU law beginning in 2018.</p>
-                    </div>
-            </div>
-            <div class="row project-section">
-                    <div class="col-12">
-                        <h3>Educational Projects at Epicodus (2016) and Portland State University (2019-)</h3>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>.NET Event Manager</h4>
-                        <p>An event manager using .NET and C# to manage events. Built for my capstone project at Epicodus programming school in Portland, OR.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Stack Overflow</h4>
-                        <p> A website created in Node that replicates Stack Overflow’s functionality combined with Reddit-style upvote/downvote functionality as a proof of concept. </p>
-                    </div>
-            </div>
-
-
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
 
-        <a name="about"></a>
-        <div class="container">
-            <div class="row project-section">
-                <div class="col-12">
-                    <h2>About Me:~</h2>
-                </div>
-            </div>
-            <div class="row project-section">
-                <div class="col-12">
-                    <h3>Hi, I'm George.</h3>
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-fluid" src="img/george.jpeg" alt="Photo of George"/>
-                </div>
-                <div class="col-sm-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia egestas leo eu dapibus. In laoreet eleifend suscipit. Proin fermentum orci sit amet nisi finibus lacinia. Duis ullamcorper in elit id venenatis. Ut efficitur non purus ac laoreet. In a leo non velit posuere ultrices. Etiam vitae massa sapien. Etiam auctor dolor quis sem malesuada ultricies. Vestibulum quis venenatis risus, at pharetra tellus.
-
-                        Ut egestas nunc ante, quis tristique dui blandit eu. Fusce ac orci at orci dignissim rhoncus. Curabitur porttitor quis ligula vel vestibulum. In a rhoncus justo. Ut nulla lorem, fermentum ut velit vitae, fermentum commodo ligula. Praesent luctus erat id accumsan placerat. Donec eget ipsum felis. Nam quam elit, malesuada quis dui in, ullamcorper mattis sapien. Maecenas mollis scelerisque cursus. Suspendisse nec augue urna. In ornare massa nec leo interdum, non euismod nunc iaculis.
-                        
-                        Phasellus sit amet feugiat metus. Aliquam porttitor lacus arcu, nec rhoncus elit lobortis ac. Aenean ut ipsum ornare, sagittis ex vel, condimentum metus. Aliquam vehicula sem eu purus finibus vehicula. Donec pretium nec sem in interdum. Donec molestie ornare volutpat. Cras blandit tristique volutpat. Pellentesque quis mi eu ipsum pharetra posuere vitae a augue. Curabitur at justo scelerisque, tempor nunc ac, egestas velit. Fusce pretium libero nibh, et pharetra quam interdum ut. Donec vitae imperdiet lorem. Aenean imperdiet turpis eget elit interdum porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row project-header">
+          <div class="col-12">
+            <h2>Portfolio:~</h2>
+          </div>
         </div>
-
-        <a name="contact"></a>
-        <div class="container">
-            <div class="row project-section">
-                <div class="col-12">
-                    <h2>Contact:~</h2>
-                </div>
+        <div class="row project-section">
+          <a name="psu"></a>
+          <div class="col-12">
+            <h3>Portland State University Student Media (2019-present)</h3>
+          </div>
+          <div class="col-md-4 project-col">
+            <h4>KPSU RadioCo Player</h4>
+            <img
+              class="img-fluid"
+              src="img/kpsu-player.png"
+              alt="Screenshot of the KPSU radio player using RadioCo"
+            />
+            <div class="badges">
+                <span class="badge badge-html">HTML</span>
+                <span class="badge badge-css">CSS</span>
+                <span class="badge badge-js">Javascript</span>
             </div>
-            <div class="row project-section">
-                <div class="col-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia egestas leo eu dapibus. In laoreet eleifend suscipit. Proin fermentum orci sit amet nisi finibus lacinia. Duis ullamcorper in elit id venenatis. Ut efficitur non purus ac laoreet. In a leo non velit posuere ultrices. Etiam vitae massa sapien. Etiam auctor dolor quis sem malesuada ultricies. Vestibulum quis venenatis risus, at pharetra tellus.
-
-                        Ut egestas nunc ante, quis tristique dui blandit eu. Fusce ac orci at orci dignissim rhoncus. Curabitur porttitor quis ligula vel vestibulum. In a rhoncus justo. Ut nulla lorem, fermentum ut velit vitae, fermentum commodo ligula. Praesent luctus erat id accumsan placerat. Donec eget ipsum felis. Nam quam elit, malesuada quis dui in, ullamcorper mattis sapien. Maecenas mollis scelerisque cursus. Suspendisse nec augue urna. In ornare massa nec leo interdum, non euismod nunc iaculis.
-                        
-                        Phasellus sit amet feugiat metus. Aliquam porttitor lacus arcu, nec rhoncus elit lobortis ac. Aenean ut ipsum ornare, sagittis ex vel, condimentum metus. Aliquam vehicula sem eu purus finibus vehicula. Donec pretium nec sem in interdum. Donec molestie ornare volutpat. Cras blandit tristique volutpat. Pellentesque quis mi eu ipsum pharetra posuere vitae a augue. Curabitur at justo scelerisque, tempor nunc ac, egestas velit. Fusce pretium libero nibh, et pharetra quam interdum ut. Donec vitae imperdiet lorem. Aenean imperdiet turpis eget elit interdum porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                    </p>
-                </div>
+            <a
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#KPSU"
+              aria-expanded="false"
+              aria-controls="KPSU"
+              >Read More</a
+            >
+            <div class="collapse" id="KPSU">
+              <p>
+                A custom radio player for the new website redesign for Portland
+                State University’s radio station. I used RadioCo’s DIY Radio
+                builder kit as a starting point and created a WordPress template
+                that implements RadioCo streaming functionality with a clean
+                layout that matches the site’s new identity. The player opens in
+                a separate browser window so music can play in the background
+                without relying on an AJAX Wordpress template.
+              </p>
             </div>
+          </div>
+          <div class="col-md-4 project-col">
+            <h4>Virtual Awards</h4>
+            <img
+              class="img-fluid"
+              src="img/salpies.png"
+              alt="Screenshot of the SALPies website design as seen when it was live"
+            />
+            <div class="badges">
+                <span class="badge badge-html">HTML</span>
+                <span class="badge badge-css">CSS</span>
+                <span class="badge badge-js">Javascript</span>
+                <span class="badge badge-php">PHP</span>
+            </div>
+            <a
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#SALP"
+              aria-expanded="false"
+              aria-controls="SALP"
+              >Read More</a
+            >
+            |
+            <a href="https://github.com/georgeolson92/Virtual-Awards" target="_blank">View on GitHub</a>
+            <div class="collapse" id="SALP">
+              <p>
+                A website built for an awards ceremony for SALP leaders at
+                Portland State University, hosted digitally during the COVID-19
+                pandemic. This website used HTML & CSS and custom JavaScript to
+                create a unique digital experience similar to what would
+                normally be hosted in-person at the university. The design was
+                created by our designer and I built out the website.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 project-col">
+            <h4>Party In The Park 2020</h4>
+            <img
+              class="img-fluid"
+              src="img/PIP_screen.jpg"
+              alt="Screenshot of Party In The Park 2020's website design as seen when it was live"
+            />
+            <div class="badges">
+                <span class="badge badge-html">HTML</span>
+                <span class="badge badge-css">CSS</span>
+                <span class="badge badge-php">PHP</span>
+                <span class="badge badge-wp">WordPress</span>
+            </div>
+            <a
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#PIP"
+              aria-expanded="false"
+              aria-controls="PIP"
+              >Read More</a
+            >
+            |
+            <a href="https://github.com/PSUInnovationLab/Party-in-the-Park-2020" target="_blank">View on GitHub</a>
+            <div class="collapse" id="PIP">
+              <p>
+                A website built to serve as a virtual fair during the COVID-19
+                pandemic in 2020. This website contained a list of events
+                similar to an in-person Party In The Park fair. This website was
+                built using node and PHP with .php web pages generated using a
+                custom code generation tool to pull organization data from a
+                spreadsheet and create web pages for each organization. Our
+                designer was responsible for designing the assets and I helped
+                my fellow developer build out the templates and created the
+                generator.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 project-col">
+            <h4>Sub Basement Studios</h4>
+            <a href="https://subbasementstudios.com/" target="_blank">
+                <img
+                class="img-fluid"
+                src="img/sbs.png"
+                alt="Screenshot of Party In The Park 2020's website design as seen when it was live"
+                />
+            </a>
+            <div class="badges">
+                <span class="badge badge-html">HTML</span>
+                <span class="badge badge-css">CSS</span>
+                <span class="badge badge-php">PHP</span>
+                <span class="badge badge-wp">WordPress</span>
+            </div>
+            <a
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#sbs"
+              aria-expanded="false"
+              aria-controls="sbs"
+              >Read More</a
+            >
+            <div class="collapse" id="sbs">
+              <p>
+              A website redesign & rebranding for Portland State University’s
+              student-run production house. Our designer created several mockups
+              for page layouts and created all of the assets, and I built out
+              the custom WordPress templates.
+                </p>
+            </div>
+          </div>
         </div>
+        <div class="row project-section">
+          <a name="fringe"></a>
+          <div class="col-12">
+            <h3>Fringe Digital Marketing (2014-2016)</h3>
+          </div>
+          <div class="col-md-4 project-col">
+            <h4>WRK Engineers</h4>
+            <a href="http://www.wrkengrs.com/" target="_blank">
+            <img
+              class="img-fluid"
+              src="img/wrk.png"
+              alt="Screenshot of Party In The Park 2020's website design as seen when it was live"
+            />
+            </a>
+            <div class="badges">
+                <span class="badge badge-html">HTML</span>
+                <span class="badge badge-css">CSS</span>
+                <span class="badge badge-js">Javascript</span>
+                <span class="badge badge-php">PHP</span>
+                <span class="badge badge-wp">WordPress</span>
+            </div>
+            <a
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#wrk"
+              aria-expanded="false"
+              aria-controls="wrk"
+              >Read More</a
+            >
+            <div class="collapse" id="wrk">
+              <p>
+                A robust WordPress website built for an engineering firm based in
+              Vancouver, Washington. The website contains custom post types for
+              projects and other items. Contains custom navigation functionality
+              within project categories, as well. My supervisor managed the
+              design of assets and mockups, and I built out the WordPress theme
+              from scratch and handled the functionality.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 project-col">
+            <h4>Somarakis</h4>
+            <a href="https://www.somarakis.com" target="_blank">
+            <img
+              class="img-fluid"
+              src="img/somarakis.png"
+              alt="Screenshot of Somarakis website"
+            />
+            </a>
+            <div class="badges">
+                <span class="badge badge-html">HTML</span>
+                <span class="badge badge-css">CSS</span>
+                <span class="badge badge-js">Javascript</span>
+                <span class="badge badge-php">PHP</span>
+                <span class="badge badge-wp">WordPress</span>
+            </div>
+            <a
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#somarakis"
+              aria-expanded="false"
+              aria-controls="somarakis"
+              >Read More</a
+            >
+            <div class="collapse" id="somarakis">
+              <p>
+                A WordPress website built for a company that manufactures liquid
+              ring vacuum pumps in Kalama, Washington. This website was designed
+              by my supervisor and I built out the template and other
+              functionality.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row project-section">
+          <a name="misc"></a>
+          <div class="col-12">
+            <h3>Miscellaneous Projects</h3>
+          </div>
+          <div class="col-12">
+              <p>More coming soon</p>
+          </div>
+        </div>
+        <div class="row project-section hidden">
+          <div class="col-12">
+            <h3>SKIDATA Loyalty.Logic (2017-2019)</h3>
+          </div>
+          <div class="col-md-4 project-col">
+            <h4>Loyalty Control Panel</h4>
+            <div class="badges">
+                <span class="badge badge-html">HTML</span>
+                <span class="badge badge-css">CSS</span>
+                <span class="badge badge-js">Javascript</span>
+                <span class="badge badge-net">.NET</span>
+            </div>
+            <p>
+              A new Angular-based web consoles for loyalty program management,
+              including management of localization features for multiple
+              languages and ensuring responsive design.
+            </p>
+          </div>
+          <div class="col-md-4 project-col">
+            <h4>Loyalty Scheduler</h4>
+            <div class="badges">
+                <span class="badge badge-net">.NET</span>
+            </div>
+            <p>
+              A simple program that uses CRON triggers to run various jobs on
+              any given interval. Examples include weekly & monthly SQL exports
+              for clients, monthly information deletion.
+            </p>
+          </div>
+          <div class="col-md-4 project-col">
+            <h4>GDPR User Obfuscation</h4>
+            <p>
+              a new featured extended into the loyalty program that removes &
+              obfuscates user data when requested by users, as required by EU
+              law beginning in 2018.
+            </p>
+          </div>
+        </div>
+        <div class="row project-section">
+          <a name="school"></a>
+          <div class="col-12">
+            <h3>
+              Educational Projects at Epicodus (2016)
+            </h3>
+          </div>
+          <div class="col-md-4 project-col">
+            <h4>.NET Event Manager</h4>
+            <div class="badges">
+                <span class="badge badge-html">HTML</span>
+                <span class="badge badge-css">CSS</span>
+                <span class="badge badge-js">Javascript</span>
+                <span class="badge badge-net">.NET</span>
+            </div>
+            <a href="https://github.com/georgeolson92/NET-Event-Manager" target="_blank">View on GitHub</a>
+            <p>
+              An event manager using .NET and C# to manage events. Built for my
+              capstone project at Epicodus programming school in Portland, OR.
+            </p>
+          </div>
+          <div class="col-md-4 project-col">
+            <h4>Stack Overflow</h4>
+            <div class="badges">
+                <span class="badge badge-html">HTML</span>
+                <span class="badge badge-css">CSS</span>
+                <span class="badge badge-js">Javascript</span>
+                <span class="badge badge-net">.NET</span>
+            </div>
+            <a href="https://github.com/georgeolson92/StackOverflow" target="_blank">View on GitHub</a>
+            <p>
+              A website created in Node that replicates Stack Overflow's
+              functionality combined with Reddit-style upvote/downvote
+              functionality as a proof of concept.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <a name="about"></a>
+      <div class="container">
+        <div class="row project-header">
+          <div class="col-12">
+            <h2>About Me:~</h2>
+          </div>
+        </div>
+        <div class="row project-section">
+          <div class="col-12">
+            <h3>Hi, I'm George.</h3>
+          </div>
+          <div class="col-sm-4">
+            <img
+              class="img-fluid"
+              src="img/george.jpeg"
+              alt="Photo of George"
+            />
+          </div>
+          <div class="col-sm-8">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              lacinia egestas leo eu dapibus. In laoreet eleifend suscipit.
+              Proin fermentum orci sit amet nisi finibus lacinia. Duis
+              ullamcorper in elit id venenatis. Ut efficitur non purus ac
+              laoreet. In a leo non velit posuere ultrices. Etiam vitae massa
+              sapien. Etiam auctor dolor quis sem malesuada ultricies.
+              Vestibulum quis venenatis risus, at pharetra tellus. Ut egestas
+              nunc ante, quis tristique dui blandit eu. Fusce ac orci at orci
+              dignissim rhoncus. Curabitur porttitor quis ligula vel vestibulum.
+              In a rhoncus justo. Ut nulla lorem, fermentum ut velit vitae,
+              fermentum commodo ligula. Praesent luctus erat id accumsan
+              placerat. Donec eget ipsum felis. Nam quam elit, malesuada quis
+              dui in, ullamcorper mattis sapien. Maecenas mollis scelerisque
+              cursus. Suspendisse nec augue urna. In ornare massa nec leo
+              interdum, non euismod nunc iaculis. Phasellus sit amet feugiat
+              metus. Aliquam porttitor lacus arcu, nec rhoncus elit lobortis ac.
+              Aenean ut ipsum ornare, sagittis ex vel, condimentum metus.
+              Aliquam vehicula sem eu purus finibus vehicula. Donec pretium nec
+              sem in interdum. Donec molestie ornare volutpat. Cras blandit
+              tristique volutpat. Pellentesque quis mi eu ipsum pharetra posuere
+              vitae a augue. Curabitur at justo scelerisque, tempor nunc ac,
+              egestas velit. Fusce pretium libero nibh, et pharetra quam
+              interdum ut. Donec vitae imperdiet lorem. Aenean imperdiet turpis
+              eget elit interdum porttitor. Interdum et malesuada fames ac ante
+              ipsum primis in faucibus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <a name="contact"></a>
+      <div class="container">
+        <div class="row project-header">
+          <div class="col-12">
+            <h2>Contact:~</h2>
+          </div>
+        </div>
+        <div class="row project-section">
+          <div class="col-12">
+            <h3>Reach out today!</h3>
+          </div>
+          <div class="col-12">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              lacinia egestas leo eu dapibus. In laoreet eleifend suscipit.
+              Proin fermentum orci sit amet nisi finibus lacinia. Duis
+              ullamcorper in elit id venenatis. Ut efficitur non purus ac
+              laoreet. In a leo non velit posuere ultrices. Etiam vitae massa
+              sapien. Etiam auctor dolor quis sem malesuada ultricies.
+              Vestibulum quis venenatis risus, at pharetra tellus. Ut egestas
+              nunc ante, quis tristique dui blandit eu. Fusce ac orci at orci
+              dignissim rhoncus. Curabitur porttitor quis ligula vel vestibulum.
+              In a rhoncus justo. Ut nulla lorem, fermentum ut velit vitae,
+              fermentum commodo ligula. Praesent luctus erat id accumsan
+              placerat. Donec eget ipsum felis. Nam quam elit, malesuada quis
+              dui in, ullamcorper mattis sapien. Maecenas mollis scelerisque
+              cursus. Suspendisse nec augue urna. In ornare massa nec leo
+              interdum, non euismod nunc iaculis. Phasellus sit amet feugiat
+              metus. Aliquam porttitor lacus arcu, nec rhoncus elit lobortis ac.
+              Aenean ut ipsum ornare, sagittis ex vel, condimentum metus.
+              Aliquam vehicula sem eu purus finibus vehicula. Donec pretium nec
+              sem in interdum. Donec molestie ornare volutpat. Cras blandit
+              tristique volutpat. Pellentesque quis mi eu ipsum pharetra posuere
+              vitae a augue. Curabitur at justo scelerisque, tempor nunc ac,
+              egestas velit. Fusce pretium libero nibh, et pharetra quam
+              interdum ut. Donec vitae imperdiet lorem. Aenean imperdiet turpis
+              eget elit interdum porttitor. Interdum et malesuada fames ac ante
+              ipsum primis in faucibus.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
