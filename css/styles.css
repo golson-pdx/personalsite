@@ -31,7 +31,7 @@ body {
 }
 
 .img-fluid {
-    margin-bottom: 10px;
+    margin: 0px auto;
 }
 
 .bg-dark .list-group-item {
@@ -146,9 +146,6 @@ h3 {
   -webkit-transition: opacity .25s ease-in-out;
 }
 
-.project-col {
-    margin-bottom: 100px;
-}
 
 .project-section .project-col a{
     color: #7CA3C3;
@@ -164,6 +161,7 @@ h3 {
 
 .badges {
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .badge-html {
@@ -215,9 +213,38 @@ h3 {
 
 .form-contact label {
     width: 100%;
-    text-align: right;
 }
 
 footer {
     padding: 80px 0px 50px;
+}
+
+@media only screen and (min-width: 675px) {
+
+    .project-col {
+        margin-bottom: 100px;
+    }
+
+.form-contact label {
+    text-align: right;
+}
+}
+
+@media only screen and (max-width: 675px) {
+    .project-col {
+        margin-bottom: 40px;
+        padding: 30px;
+    }
+
+    p {
+        padding: 15px;
+    }
+
+    .form-contact {
+        padding: 15px;
+    }
+
+    .img-fluid {
+        padding: 15px;
+    }
 }
