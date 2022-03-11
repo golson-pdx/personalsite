@@ -23,6 +23,12 @@ body {
     margin-bottom: 10px;
 }
 
+.bg-dark .list-group-item {
+    color: white;
+    text-decoration: none;
+    background-color: #212529;
+}
+
 .header-h1 {
     margin: 45px 30px 50px 0px;
 }
@@ -56,8 +62,25 @@ body {
     margin: 10px 0px 10px 0px;
 }
 
-.project-section h3, .resume-section h3 {
+.project-section h3 {
     border-bottom: 2px solid #b5b5b5;
+}
+
+.resume-section h3 {
+    margin: 50px 0px 20px;
+}
+
+/* Jobs */
+.job h4 {
+    margin-bottom: 0px;
+}
+
+.job .role {
+    margin-bottom: 0px;
+}
+
+.job .dates {
+    font-style: italic;
 }
 
 .dropdown-label {
