@@ -72,6 +72,10 @@ body {
 }
 
 /* Jobs */
+.job {
+    padding: 30px;
+}
+
 .job h4 {
     margin-bottom: 3px;
 }
