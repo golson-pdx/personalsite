@@ -16,6 +16,7 @@ body {
 }
 
 .underline-header {
+    margin-top: 30px;
     border-bottom: 2px solid white;
 }
 
@@ -53,6 +54,10 @@ body {
 .navbar .dropdown-item:hover {
     background-color: #7CA3C3;
     color: black;
+}
+
+.resume-header h2 {
+    padding-left: 0px;
 }
 
 .project-section h3, .project-header h3, .resume-section h3, .resume-header h3 {
