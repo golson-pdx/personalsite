@@ -59,7 +59,7 @@
                 >
                   <li><span class="dropdown-label">Professional</span></li>
                   <li>
-                    <a class="dropdown-item" href="#psu"
+                    <a class="dropdown-item" href="#studentmedia"
                       >Student Media Tech Team</a
                     >
                   </li>
@@ -71,13 +71,10 @@
                       >Fringe Digital Marketing</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#misc">Misc. Projects</a>
-                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li><span class="dropdown-label">Educational</span></li>
                   <li>
-                    <a class="dropdown-item" href="#psu-student"
+                    <a class="dropdown-item" href="#psu"
                       >Portland State University</a
                     >
                   </li>
@@ -86,7 +83,7 @@
                   </li>
                   <li>
                     <a class="dropdown-item" href="#wsu"
-                      >Washington State University</a
+                      >Washington State University Vancouver</a
                     >
                   </li>
                 </ul>
@@ -103,14 +100,11 @@
       </nav>
 
       <div class="container">
+        <a name="portfolio"></a>
         <div class="row project-header">
             <h2>Portfolio:~</h2>
         </div>
         <div class="row project-section">
-          <a name="psu"></a>
-          <div class="col-12">
-            <h3>Portland State University Student Media (2019-present)</h3>
-          </div>
           <div class="col-md-4 project-col">
             <h4>KPSU RadioCo Player</h4>
             <img
@@ -254,12 +248,6 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="row project-section">
-          <a name="fringe"></a>
-          <div class="col-12">
-            <h3>Fringe Digital Marketing (2014-2016)</h3>
-          </div>
           <div class="col-md-4 project-col">
             <h4>WRK Engineers</h4>
             <a href="http://www.wrkengrs.com/" target="_blank">
@@ -328,21 +316,7 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="row project-section">
-          <a name="misc"></a>
-          <div class="col-12">
-            <h3>Miscellaneous Projects</h3>
-          </div>
-          <div class="col-12">
-            <p>More coming soon</p>
-          </div>
-        </div>
-        <div class="row project-section hidden">
-          <div class="col-12">
-            <h3>SKIDATA Loyalty.Logic (2017-2019)</h3>
-          </div>
-          <div class="col-md-4 project-col">
+          <div class="col-md-4 project-col hidden">
             <h4>Loyalty Control Panel</h4>
             <div class="badges">
               <span class="badge badge-html">HTML</span>
@@ -356,7 +330,7 @@
               languages and ensuring responsive design.
             </p>
           </div>
-          <div class="col-md-4 project-col">
+          <div class="col-md-4 project-col hidden">
             <h4>Loyalty Scheduler</h4>
             <div class="badges">
               <span class="badge badge-net">.NET</span>
@@ -367,19 +341,16 @@
               for clients, monthly information deletion.
             </p>
           </div>
-          <div class="col-md-4 project-col">
+          <div class="col-md-4 project-col hidden">
             <h4>GDPR User Obfuscation</h4>
+            <div class="badges">
+                <span class="badge badge-net">.NET</span>
+              </div>
             <p>
-              a new featured extended into the loyalty program that removes &
+              A new featured extended into the loyalty program that removes &
               obfuscates user data when requested by users, as required by EU
               law beginning in 2018.
             </p>
-          </div>
-        </div>
-        <div class="row project-section">
-          <a name="school"></a>
-          <div class="col-12">
-            <h3>Educational Projects at Epicodus (2016)</h3>
           </div>
           <div class="col-md-4 project-col">
             <h4>.NET Event Manager</h4>
@@ -390,14 +361,25 @@
               <span class="badge badge-net">.NET</span>
             </div>
             <a
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#event"
+              aria-expanded="false"
+              aria-controls="event"
+              >Read More</a
+            >
+            |
+            <a
               href="https://github.com/georgeolson92/NET-Event-Manager"
               target="_blank"
               >View on GitHub</a
             >
-            <p>
-              An event manager using .NET and C# to manage events. Built for my
-              capstone project at Epicodus programming school in Portland, OR.
-            </p>
+            <div class="collapse" id="event">
+                <p>
+                    An event manager using .NET and C# to manage events. Built for my
+                    capstone project at Epicodus programming school in Portland, OR.
+                </p>
+            </div>
           </div>
           <div class="col-md-4 project-col">
             <h4>Stack Overflow</h4>
@@ -408,15 +390,26 @@
               <span class="badge badge-net">.NET</span>
             </div>
             <a
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#stack"
+              aria-expanded="false"
+              aria-controls="stack"
+              >Read More</a
+            >
+            |
+            <a
               href="https://github.com/georgeolson92/StackOverflow"
               target="_blank"
               >View on GitHub</a
             >
-            <p>
-              A website created in Node that replicates Stack Overflow's
-              functionality combined with Reddit-style upvote/downvote
-              functionality as a proof of concept.
-            </p>
+            <div class="collapse" id="stack">
+                <p>
+                A website created in Node that replicates Stack Overflow's
+                functionality combined with Reddit-style upvote/downvote
+                functionality as a proof of concept.
+                </p>
+            </div>
           </div>
         </div>
       </div>
@@ -429,14 +422,11 @@
           </div>
         </div>
         <div class="row resume-section">
-          <div class="col-12">
+          <div class="col-md-12">
             <h3>Professional</h3>
-          </div>
-        </div>
-        <div class="row resume-section">
-            <div class="col-12">
           <ul class="list-group bg-dark">
             <li class="list-group-item job">
+            <a name="studentmedia"></a>
               <h4>Portland State University Student Media Technology Team</h4>
               <p class="role">Web Developer</p>
               <p class="dates">2019 - Present</p>
@@ -449,6 +439,7 @@
               </p>
             </li>
             <li class="list-group-item job">
+            <a name="skidata"></a>
               <h4>SKIDATA</h4>
               <p class="role">Entry Level Software Developer</p>
               <p class="dates">2017 - 2019</p>
@@ -461,6 +452,7 @@
               </p>
             </li>
             <li class="list-group-item job">
+            <a name="fringe"></a>
               <h4>Fringe Digital Marketing Agency</h4>
               <p class="role">Web Developer</p>
               <p class="dates">2014 - 2016</p>
@@ -474,16 +466,11 @@
             </li>
         </ul>
             </div>
-        </div>
-        <div class="row resume-section">
             <div class="col-12">
               <h3>Education</h3>
-            </div>
-        </div>
-        <div class="row resume-section">
-            <div class="col-12">
             <ul class="list-group bg-dark">
                 <li class="list-group-item job">
+                  <a name="psu"></a>
                   <h4>Portland State University</h4>
                   <p class="role">Masters in Computer Science</p>
                   <p class="dates">2022 - Present</p>
@@ -496,6 +483,7 @@
                   </p>
                 </li>
                 <li class="list-group-item job">
+                  <a name="epicodus"></a>
                   <h4>Epicodus</h4>
                   <p class="role">Software Development Certification</p>
                   <p class="dates">2016</p>
@@ -508,6 +496,7 @@
                   </p>
                 </li>
                 <li class="list-group-item job">
+                    <a name="wsu"></a>
                   <h4>Washington State University Vancouver</h4>
                   <p class="role">Bachelor of Arts in Digital Technology & Culture</p>
                   <p class="dates">2010 - 2014</p>

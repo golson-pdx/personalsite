@@ -26,7 +26,8 @@ body {
 .bg-dark .list-group-item {
     color: white;
     text-decoration: none;
-    background-color: #212529;
+    background-color: #121212;
+    border-color: #353535;
 }
 
 .header-h1 {
@@ -72,7 +73,7 @@ body {
 
 /* Jobs */
 .job h4 {
-    margin-bottom: 0px;
+    margin-bottom: 3px;
 }
 
 .job .role {
@@ -82,6 +83,8 @@ body {
 .job .dates {
     font-style: italic;
 }
+
+
 
 .dropdown-label {
     display: block;
