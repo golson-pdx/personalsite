@@ -120,7 +120,7 @@ body {
 }
 
 .project-col {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .project-section .project-col a{
@@ -168,6 +168,8 @@ body {
     margin-bottom: 4px;
 }
 
-.project-section, .resume-section {
+
+
+.project-section p, .resume-section p{
     color: rgba(255,255,255,.55);
 }
