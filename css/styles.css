@@ -3,26 +3,35 @@
 }
 
 body {
-    background-color: #121212;
+    background-color: #161616;
     color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 500;
+}
+
+.list-group {
+    border-radius: 0px;
 }
 
 .bg-dark {
-    background-color: black !important;
+    background-color: #121212 !important;
 }
 
 .project-header h2 {
     padding-left: 0px !important;
 }
 
+.card {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
 .underline-header {
     margin-top: 30px;
     border-bottom: 2px solid white;
-}
-
-.project-header {
-    margin-top: 70px;
-    margin-bottom: 60px;
 }
 
 .contact-header {
@@ -62,8 +71,9 @@ body {
     color: black;
 }
 
-.resume-header h2 {
+.resume-header h2, .resume-header h3{
     padding-left: 0px;
+    margin-bottom: 0px;
 }
 
 h3 {
@@ -79,7 +89,7 @@ h3 {
 }
 
 .resume-section h3, .resume-header h3 {
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .resume-section h3 {
@@ -164,28 +174,32 @@ h3 {
     margin-top: 10px;
 }
 
+.badge {
+    opacity: 0.8;
+}
+
 .badge-html {
-    background-color: #268e3e;
+    background-color: #E34D36;
 }
 
 .badge-css {
-    background-color: blue;
+    background-color: #563D7C;
 }
 
 .badge-js {
-    background-color: #a1bf1a;
+    background-color: #F1E05A;
 }
 
 .badge-wp {
-    background-color: navy;
+    background-color: #2F7BCA;
 }
 
 .badge-php {
-    background-color: #ff005d;
+    background-color: #4F5D95;
 }
 
 .badge-net {
-    background-color: #9b0000;
+    background-color: #5D2D92;
 }
 
 
@@ -195,6 +209,10 @@ h3 {
 
 .form-contact .form-group {
     margin-bottom: 10px;
+}
+
+.form-contact {
+    padding: 20px;
 }
 
 .bg-dark .form-control {
@@ -221,8 +239,9 @@ footer {
 
 @media only screen and (min-width: 675px) {
 
-    .project-col {
-        margin-bottom: 100px;
+    .project-header {
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
 .form-contact label {
@@ -231,20 +250,12 @@ footer {
 }
 
 @media only screen and (max-width: 675px) {
-    .project-col {
-        margin-bottom: 40px;
-        padding: 30px;
-    }
 
     p {
         padding: 15px;
     }
 
     .form-contact {
-        padding: 15px;
-    }
-
-    .img-fluid {
         padding: 15px;
     }
 }
