@@ -1,287 +1,293 @@
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .loading-spinner {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 50%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
 }
 
 .loading-spinner .spinner-border {
-    margin: 0px auto;
-    text-align: center;
+  margin: 0px auto;
+  text-align: center;
 }
 
 .main-content {
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
   -moz-transition: opacity 2s ease-in-out;
   -webkit-transition: opacity 2s ease-in-out;
 }
 
 .navbar-nav .nav-item {
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
   -moz-transition: opacity 2s ease-in-out;
   -webkit-transition: opacity 2s ease-in-out;
 }
 
 body {
-    background-color: #161616;
-    color: white;
-    font-family:'Courier New', Courier, monospace;
+  background-color: #161616;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
 }
 
-h1, h2, h3, h4 {
-    font-weight: 500;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
 }
 
 .larger {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .bio-image {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .list-group {
-    border-radius: 0px;
+  border-radius: 0px;
 }
 
 .bg-dark {
-    background-color: #121212 !important;
+  background-color: #121212 !important;
 }
 
 .project-header h2 {
-    padding-left: 0px !important;
+  padding-left: 0px !important;
 }
 
 .card {
-    margin-bottom: 20px;
-    padding: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .underline-header {
-    margin-top: 30px;
-    border-bottom: 2px solid white;
+  margin-top: 30px;
+  border-bottom: 2px solid white;
 }
 
 .contact-header {
-    margin-top: 40px;
-    margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .img-fluid {
-    margin: 0px auto;
+  margin: 0px auto;
 }
 
 .bg-dark .list-group-item {
-    color: white;
-    text-decoration: none;
-    background-color: #121212;
-    border-color: #353535;
+  color: white;
+  text-decoration: none;
+  background-color: #121212;
+  border-color: #353535;
 }
 
 .header-h1 {
-    margin: 45px 30px 50px 0px;
+  margin: 45px 30px 50px 0px;
 }
 
 .navbar {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .navbar a:hover {
-    color: #7CA3C3;
+  color: #7ca3c3;
 }
 
 .navbar .dropdown-item {
-    color: rgba(255,255,255,.55);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .navbar .dropdown-item:hover {
-    background-color: #7CA3C3;
-    color: black;
+  background-color: #7ca3c3;
+  color: black;
 }
 
-.resume-header h2, .resume-header h3{
-    padding-left: 0px;
-    margin-bottom: 0px;
+.resume-header h2,
+.resume-header h3 {
+  padding-left: 0px;
+  margin-bottom: 0px;
 }
 
 h3 {
-    padding-left: 0px;
+  padding-left: 0px;
 }
 
-.project-section h3, .project-header h3, .resume-section h3, .resume-header h3 {
-    padding: 2px 0px;
+.project-section h3,
+.project-header h3,
+.resume-section h3,
+.resume-header h3 {
+  padding: 2px 0px;
 }
 
-.project-section h3, .project-header h3 {
-    margin: 10px 0px 30px 0px;
+.project-section h3,
+.project-header h3 {
+  margin: 10px 0px 30px 0px;
 }
 
-.resume-section h3, .resume-header h3 {
-    margin: 10px 0px 0px 0px;
+.resume-section h3,
+.resume-header h3 {
+  margin: 10px 0px 0px 0px;
 }
 
 .resume-section h3 {
-    margin: 50px 0px 20px;
+  margin: 50px 0px 20px;
 }
 
 /* Jobs */
 .job {
-    padding: 30px;
-    border-right: 0px;
-    border-left: 0px;
+  padding: 30px;
+  border-right: 0px;
+  border-left: 0px;
 }
 
 .job:first-child {
-    border-top: 0px;
+  border-top: 0px;
 }
 
 .job:last-child {
-    border-bottom: 0px;
+  border-bottom: 0px;
 }
 
 .job h4 {
-    margin-bottom: 3px;
+  margin-bottom: 3px;
 }
 
 .job .role {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .job .dates {
-    font-style: italic;
+  font-style: italic;
 }
 
 .portfolio-header {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .dropdown-label {
-    display: block;
-    width: 100%;
-    padding: 0.25rem 1rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-    color: white;
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  color: white;
 }
 
 .project a img {
-    opacity: 1;
-    transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
 }
 
 .project-section a:hover img {
-    opacity: 0.5;
-    transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+  opacity: 0.5;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
 }
 
-
-.project-section .project-col a{
-    color: #7CA3C3;
-    text-decoration: underline;
+.project-section .project-col a {
+  color: #7ca3c3;
+  text-decoration: underline;
 }
 
 .project-section .project-col a:hover {
-    color: blue;
-    text-decoration: underline;
+  color: blue;
+  text-decoration: underline;
 }
 
 /*Badges */
 
 .badges {
-    margin-bottom: 10px;
-    margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .badge {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .badge-html {
-    background-color: #E34D36;
+  background-color: #e34d36;
 }
 
 .badge-css {
-    background-color: #563D7C;
+  background-color: #563d7c;
 }
 
 .badge-js {
-    background-color: #F1E05A;
+  background-color: #f1e05a;
 }
 
 .badge-wp {
-    background-color: #2F7BCA;
+  background-color: #2f7bca;
 }
 
 .badge-php {
-    background-color: #4F5D95;
+  background-color: #4f5d95;
 }
 
 .badge-net {
-    background-color: #5D2D92;
+  background-color: #5d2d92;
 }
 
 .form-contact .form-group {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .form-contact {
-    padding: 20px;
+  padding: 20px;
 }
 
 .bg-dark .form-control {
-    color: white !important;
-    background-color: #121212 !important;
+  color: white !important;
+  background-color: #121212 !important;
 }
 
-.project-section p, .resume-section p{
-    color: rgba(255,255,255,.55);
+.project-section p,
+.resume-section p {
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .form-contact {
-    background-color: #121212;
-    color: white;
+  background-color: #121212;
+  color: white;
 }
 
 .form-contact label {
-    width: 100%;
+  width: 100%;
 }
 
 footer {
-    padding: 80px 0px 50px;
+  padding: 80px 0px 50px;
 }
 
 @media only screen and (min-width: 675px) {
+  .project-header {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
 
-    .project-header {
-        margin-top: 20px;
-        margin-bottom: 15px;
-    }
-
-.form-contact label {
+  .form-contact label {
     text-align: right;
-}
+  }
 }
 
 @media only screen and (max-width: 675px) {
-
-
-    .form-contact {
-        padding: 15px;
-    }
+  .form-contact {
+    padding: 15px;
+  }
 }
