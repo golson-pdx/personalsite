@@ -126,6 +126,10 @@ h3 {
   padding: 20px;
 }
 
+.project-col a {
+    cursor: pointer;
+}
+
 .bg-dark .list-group-item {
   color: white;
   text-decoration: none;
