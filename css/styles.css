@@ -2,6 +2,32 @@
     display: none !important;
 }
 
+.loading-spinner {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+}
+
+.loading-spinner .spinner-border {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.main-content {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+}
+
+.navbar-nav .nav-item {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+}
+
 body {
     background-color: #161616;
     color: white;
