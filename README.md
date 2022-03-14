@@ -15,6 +15,7 @@ Single-page web project to display some of my past work and give other people a 
 
 ## Resources Used
 1. [JQuery Documentation](https://api.jquery.com/)
+    - How to implement intervals and timeouts for initial loading animations
 2. [Developer.Mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
     - For help with setting the ":first-child" pseudo-element
 3. [Bootstrap Documentation](https://getbootstrap.com/docs/5.0/components/navbar/)
