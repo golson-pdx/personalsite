@@ -12,6 +12,14 @@ h1, h2, h3, h4 {
     font-weight: 500;
 }
 
+.larger {
+    font-size: 1.4em;
+}
+
+.bio-image {
+    padding-bottom: 15px;
+}
+
 .list-group {
     border-radius: 0px;
 }
