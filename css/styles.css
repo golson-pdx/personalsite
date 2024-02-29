@@ -173,6 +173,10 @@ h3 {
   background-color: #5d2d92;
 }
 
+.badge-python {
+  background-color: #33692c;
+}
+
 .project a img {
   opacity: 1;
   transition: opacity 0.25s ease-in-out;
