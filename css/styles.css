@@ -170,6 +170,10 @@ h3 {
 }
 
 .badge-net {
+  background-color: #be2a74;
+}
+
+.badge-csharp {
   background-color: #5d2d92;
 }
 
