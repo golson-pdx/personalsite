@@ -321,4 +321,9 @@ footer {
   .form-contact {
     padding: 15px;
   }
+
+  .project-col h4 {
+    margin-top: 10px;
+  }
+  
 }
