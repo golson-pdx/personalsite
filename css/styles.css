@@ -37,6 +37,14 @@ h3 {
   margin: 0px auto;
 }
 
+a {
+  color: #7ca3c3;
+}
+
+a:hover {
+  color: blue;
+}
+
 /* HEADER */
 
 .header-h1 {
@@ -110,6 +118,16 @@ h3 {
 .bio-image {
   padding-bottom: 15px;
 }
+
+.social-icon {
+  text-decoration: none;
+  color: #7ca3c3;
+}
+
+.social-icon:hover {
+  color: blue;
+}
+
 
 /* PROJECTS SECTION */
 
