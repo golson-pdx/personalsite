@@ -1,8 +1,18 @@
 /* GENERAL STYLES */
+.roboto-condensed-george {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
-  background-color: #161616;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
+  background-color: white;
+  color: #161616;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 h1,
@@ -10,6 +20,12 @@ h2,
 h3,
 h4 {
   font-weight: 500;
+}
+
+h2, h3, h4 {
+  color: #0057ff;
+  padding-bottom: 5px;
+  font-weight: 700;
 }
 
 h3 {
@@ -24,13 +40,9 @@ h3 {
   display: none !important;
 }
 
-.bg-dark {
-  background-color: #121212 !important;
-}
-
 .underline-header {
   margin-top: 30px;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid #0057ff;
 }
 
 .img-fluid {
@@ -38,7 +50,7 @@ h3 {
 }
 
 a {
-  color: #7ca3c3;
+  color: #0057ff;
 }
 
 a:hover {
@@ -53,14 +65,24 @@ a:hover {
 
 .navbar {
   margin-bottom: 30px;
+  background-color: #0057ff;
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #0057ff;
+}
+
+.navbar a {
+  color: white;
 }
 
 .navbar a:hover {
-  color: #7ca3c3;
+  color: black;
 }
 
 .navbar .dropdown-item {
-  color: rgba(255, 255, 255, 0.55);
+  color: white;
 }
 
 .navbar .dropdown-item:hover {
@@ -68,12 +90,19 @@ a:hover {
   color: black;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1);
+}
+
+
 .navbar-nav .nav-item {
   opacity: 0;
   transition: opacity 2s ease-in-out;
   -moz-transition: opacity 2s ease-in-out;
   -webkit-transition: opacity 2s ease-in-out;
 }
+
+
 
 .dropdown-label {
   display: block;
@@ -87,7 +116,6 @@ a:hover {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
-  color: white;
 }
 
 /* LOADING ANIMATION */
@@ -116,12 +144,14 @@ a:hover {
 /* ABOUT SECTION */
 
 .bio-image {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #0057ff;
 }
 
 .social-icon {
   text-decoration: none;
-  color: #7ca3c3;
+  color: #0057ff;
+  margin-left: 10px;
 }
 
 .social-icon:hover {
@@ -141,21 +171,15 @@ a:hover {
 }
 
 .project-section .row {
-  padding: 20px;
-  border-bottom: 1px solid #353535;
+  padding: 20px 10px;
+  border: 1px solid #0057ff;
   margin-left: 0px;
   margin-right: 0px;
+  margin-bottom: 25px;
 }
 
 .project-col a {
     cursor: pointer;
-}
-
-.bg-dark .list-group-item {
-  color: white;
-  text-decoration: none;
-  background-color: #121212;
-  border-color: #353535;
 }
 
 .badges {
@@ -176,7 +200,7 @@ a:hover {
 }
 
 .badge-js {
-  background-color: #f1e05a;
+  background-color: #d4c01f;
 }
 
 .badge-wp {
@@ -199,6 +223,10 @@ a:hover {
   background-color: #33692c;
 }
 
+.project-section h4 {
+  margin-top: 15px;
+}
+
 .project a img {
   opacity: 1;
   transition: opacity 0.25s ease-in-out;
@@ -214,7 +242,7 @@ a:hover {
 }
 
 .project-section .project-col a {
-  color: #7ca3c3;
+  color: #0057ff;
   text-decoration: underline;
 }
 
@@ -228,11 +256,6 @@ a:hover {
 }
 
 /* PROJECTS AND JOBS */
-
-.project-section p,
-.resume-section p {
-  color: rgba(255, 255, 255, 0.55);
-}
 
 .resume-header h2,
 .resume-header h3 {
@@ -263,7 +286,7 @@ a:hover {
 
 /* JOBS */
 .job {
-  padding: 30px;
+  padding: 20px 0px 0px 0px;
   border-right: 0px;
   border-left: 0px;
 }
@@ -295,11 +318,6 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.form-contact {
-  background-color: #121212;
-  color: white;
-}
-
 .form-contact label {
   width: 100%;
 }
@@ -310,11 +328,6 @@ a:hover {
 
 .form-contact {
   padding: 20px;
-}
-
-.bg-dark .form-control {
-  color: white !important;
-  background-color: #121212 !important;
 }
 
 /* FOOTER */
